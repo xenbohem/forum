@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminator Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="terminal">
+        <div id="boot-sequence">Initializing Nexus...</div>
+        <div id="chat-container">
+            <div id="messages"></div>
+            <input type="text" id="chat-input" placeholder="Enter command...">
+            <button id="send-btn">Transmit</button>
+        </div>
+        <div id="vault">
+            <h2>Personal Vault</h2>
+            <textarea id="note-input" placeholder="Save a project or mantra..."></textarea>
+            <button id="save-note">Save</button>
+            <ul id="notes-list"></ul>
+        </div>
+        <nav>
+            <a href="forum.html">Forum</a> | <a href="mantras.html">Mantra Vault</a>
+        </nav>
+    </div>
+    <audio id="ambient-sound" src="hums.mp3" loop autoplay muted></audio> <!-- Optional ambient sound -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
